@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #1a1a1a;
+            background-image: linear-gradient(45deg, #222 25%, transparent 25%),
+                            linear-gradient(-45deg, #222 25%, transparent 25%),
+                            linear-gradient(45deg, transparent 75%, #222 75%),
+                            linear-gradient(-45deg, transparent 75%, #222 75%);
+            background-size: 20px 20px;
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+            max-width: 800px;
+            width: 90%;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-weight: bold;
+        }
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+        }
+        .instructions {
+            margin-top: 20px;
+            max-width: 600px;
+            text-align: left;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #4CAF50;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        h2, h3 {
+            color: #4CAF50;
+        }
+        li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Python Snake Game</h1>
+        <div class="instructions">
+            <h2>How to Play:</h2>
+            <ol>
+                <li>Download the Python file using the button below</li>
+                <li>Make sure you have Python and Pygame installed on your computer</li>
+                <li>Run the game using Python</li>
+                <li>Use arrow keys to control the snake</li>
+                <li>Collect food to grow longer</li>
+                <li>Avoid hitting walls and yourself</li>
+            </ol>
+            <h3>Requirements:</h3>
+            <ul>
+                <li>Python 3.x</li>
+                <li>Pygame library (install using: pip install pygame)</li>
+            </ul>
+        </div>
+        <a href="main.py" download class="download-btn">Download Snake Game</a>
+    </div>
+</body>
+</html>
